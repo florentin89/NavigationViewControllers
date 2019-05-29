@@ -20,6 +20,6 @@ class ThirdVC: UIViewController {
     @IBAction func finishBtn(_ sender: UIBarButtonItem) {
         let firstVC = self.storyboard?.instantiateViewController(withIdentifier: "FirstVC") as! FirstVC
         firstVC.commentReceived = self.comment
-        self.navigationController?.setViewControllers([self.navigationController!.viewControllers.first!, firstVC], animated: true)
+        self.navigationController?.setViewControllers([firstVC], animated: true)
     }
 }
