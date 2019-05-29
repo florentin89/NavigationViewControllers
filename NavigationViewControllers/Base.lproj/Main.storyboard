@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yyi-Xx-aSg">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First VC-->
+        <scene sceneID="HR4-17-IVT">
+            <objects>
+                <viewController storyboardIdentifier="FirstVC" id="fuJ-P1-dlK" customClass="FirstVC" customModule="NavigationViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FAQ-OH-iMg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRST VIEW CONTROLLER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mT8-df-HkC">
+                                <rect key="frame" x="105" y="437.5" width="204.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mT8-df-HkC" firstAttribute="centerY" secondItem="FAQ-OH-iMg" secondAttribute="centerY" id="fWk-Rw-BtF"/>
+                            <constraint firstItem="mT8-df-HkC" firstAttribute="centerX" secondItem="FAQ-OH-iMg" secondAttribute="centerX" id="okM-hC-2bh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uX1-gf-O2m"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="First VC" id="BYd-qv-QWp">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="o3f-k9-VEC">
+                            <connections>
+                                <action selector="nextBtn:" destination="fuJ-P1-dlK" id="hLK-Kn-BsL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xew-Nk-uy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1999" y="955"/>
+        </scene>
+        <!--Second VC-->
+        <scene sceneID="TFv-kd-3ow">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" title="Second VC" id="pju-hk-bvF" customClass="SecondVC" customModule="NavigationViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jio-Lq-3As">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SECOND VIEW CONTROLLER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jb1-LO-Fwp">
+                                <rect key="frame" x="93" y="437.5" width="228.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jb1-LO-Fwp" firstAttribute="centerY" secondItem="Jio-Lq-3As" secondAttribute="centerY" id="UUi-KY-eHh"/>
+                            <constraint firstItem="Jb1-LO-Fwp" firstAttribute="centerX" secondItem="Jio-Lq-3As" secondAttribute="centerX" id="aLR-nX-bsP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P03-C4-kid"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second VC" id="Xmn-NL-9uj">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="tUB-dY-ZsF">
+                            <connections>
+                                <action selector="nextBtn:" destination="pju-hk-bvF" id="ukk-9i-iHc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjs-YJ-sRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2872" y="955"/>
+        </scene>
+        <!--Third VC-->
+        <scene sceneID="Gan-7A-Y41">
+            <objects>
+                <viewController storyboardIdentifier="ThirdVC" id="1DK-Cr-7wF" customClass="ThirdVC" customModule="NavigationViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iow-lU-H2a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIRD VIEW CONTROLLER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fME-6F-7Cp">
+                                <rect key="frame" x="102.5" y="437.5" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fME-6F-7Cp" firstAttribute="centerY" secondItem="iow-lU-H2a" secondAttribute="centerY" id="7w1-ZA-Cli"/>
+                            <constraint firstItem="fME-6F-7Cp" firstAttribute="centerX" secondItem="iow-lU-H2a" secondAttribute="centerX" id="U0c-aN-9jR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="G4h-31-BuJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Third VC" id="t8X-kI-x6N">
+                        <barButtonItem key="rightBarButtonItem" title="Finish" id="iqS-iy-sog">
+                            <connections>
+                                <action selector="finishBtn:" destination="1DK-Cr-7wF" id="5NH-3n-BXK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rE-Gx-amD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3758" y="955"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qe7-LO-Ytl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yyi-Xx-aSg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hJR-q0-LMF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fuJ-P1-dlK" kind="relationship" relationship="rootViewController" id="zcR-vQ-2qV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJz-69-PvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="955"/>
+        </scene>
+    </scenes>
+</document>
